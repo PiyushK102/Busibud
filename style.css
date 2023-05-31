@@ -15,6 +15,8 @@ nav{
     display:flex;
     flex-direction: row;
     height:fit-content;
+    z-index:50;
+    padding:2% 0;
     align-content: space-around;
     justify-content: center;
     align-items: center;
@@ -114,4 +116,153 @@ hr{
     margin:10px;
     font-size: 18px;
     text-align: left;
+}
+#part5{
+   display:flex;
+   flex-direction:column;
+}
+#part5dot1,#part5dot3{
+    text-align:left;
+    vertical-align:middle;
+    width:95%;
+    float:left;
+    display:flex;
+    flex-direction:row;
+}
+#part5dot2,#part5dot4{
+    text-align:left;
+    vertical-align:middle;
+    width:95%;
+    float:right;
+    align-self:right;
+    display:flex;
+    flex-direction:row;
+}
+#part5dot1 img,#part5dot3 img,#part5dot2 img,#part5dot4 img{
+    vertical-align:middle;
+    margin:2%;
+}
+#content-div{
+    width:45%;
+    height:fit-content;
+    margin:2%;
+}
+#blank{
+    width:45%;
+    height:fit-content;
+    margin:2%;
+}
+#part6{
+    width:80%;
+    height:fit-content;
+    border-radius:42px;
+    box-shadow:2px 3px 4px 4px rgba(128, 128, 128, 0.301);
+    margin:2% 15% 2% 5%;
+    z-index:20;
+    padding:2%;
+}
+#part6dot1 img{
+    width:60px ;
+    height:60px; 
+    vertical-align:middle;
+    
+}
+#part6dot2{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    bottom:-100px;
+    right:-70px;
+    width:95%;
+    justify-content:center;
+    align-items:center;
+}
+h6{
+   color:grey;
+   font-weight:100;
+   margin:10px;
+}
+#testimonial{
+   width:28%;
+   height:45%;
+   display:flex;
+   flex-direction:column;
+   text-align:center;
+   vertical-align:middle;
+   z-index:30;
+   border:solid 1px grey;
+   box-shadow:2px 3px 3px 3px rgba(128, 128, 128, 0.301);
+   padding:1% 1% 8% 1%;
+   border-radius:30px;
+   margin:10px;
+   align-content:space-evenly;
+   background-color:white;
+}
+#testtop{
+   display:flex;
+   flex-direction:row;
+   align-content:space-evenly;
+   justify-content:center;
+}
+#testimonial img{
+   vertical-align:middle;
+}
+#image,#namespan,#rating{
+   margin:10px;
+   word-wrap:normal;
+}
+#forwardarrow .material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48;
+}
+#forwardarrow{
+   display:flex;
+   height:60px;
+   width:60px;
+   z-index:30;
+   margin:10px;
+   border:solid 1px grey;
+   box-shadow:2px 3px 3px 3px rgba(128, 128, 128, 0.301);
+   border-radius:50%;
+   margin:10px;
+   background-color:white;
+   position:relative;
+   justify-content:center;
+   align-items:center;
+}
+#part7{
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   width:95%;
+   height:fit-content;
+   padding:2%;
+   margin:2.5%;
+   align-items:flex-end;
+}
+#image1{
+   margin:2%;
+   width:30%;
+
+}
+#image1 img{
+   width:inherit;
+   text-align:center;
+}
+#bottombar{
+   
+   text-align:center;
+   background-color:black;
+   color:white;
+   width:100%;
+   height:10vw;
+   vertical-align:baseline;   
+}
+@media screen and (max-width:800px) {
+
+*{overflow-x:scroll}
+::-webkit-scrollbar{display:none;}
 }
