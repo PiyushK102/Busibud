@@ -1,4 +1,8 @@
+::-webkit-scrollbar{
+    display:none;
+}
 #pic{
+    width:90vw;
     align-self: center;
     left:50%;
     right:50%;
@@ -10,20 +14,20 @@
     height:47.83px;
 }
 nav{
-    width:100%;
+    width:98vw;
     height:60px;
     display:flex;
     flex-direction: row;
     height:fit-content;
     z-index:50;
     padding:2% 0;
-    align-content: space-around;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: sticky;
     top:0;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid gray;
+    overflow-x: scroll;
 }
 #navbtn{
     top: 111px;
@@ -40,19 +44,17 @@ nav{
     display: inline-flex;
     align-items: center;
 }
-hr{
-    width:100%;
-}
 #part2{
     display:flex;
     flex-direction: row;
     align-self: center;
     align-items: center;
+    width:90vw;
 }
 #part2dot2{
- width:100% ;
+ width:90vw ;
  height:520px;
- background: url(/part2.2.png) no-repeat ;  
+ background: url(images/part2.2.png) no-repeat ;  
 }
 #part2dot1{
     left:121px;
@@ -158,8 +160,10 @@ hr{
     border-radius:42px;
     box-shadow:2px 3px 4px 4px rgba(128, 128, 128, 0.301);
     margin:2% 15% 2% 5%;
+    background-color:#F8FAFC;
     z-index:20;
     padding:2%;
+    flex-wrap: nowrap;
 }
 #part6dot1 img{
     width:60px ;
@@ -173,7 +177,7 @@ hr{
     position:relative;
     bottom:-100px;
     right:-70px;
-    width:95%;
+    width:85vw;
     justify-content:center;
     align-items:center;
 }
@@ -261,13 +265,14 @@ h6{
    height:10vw;
    vertical-align:baseline;   
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
 *{margin:0;padding:0;}
 nav{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:100%;
+    width:95vw;
+    margin:0;
     height:20%;
     overflow-x: scroll;
     font-size: 10px;
@@ -289,18 +294,18 @@ nav{
 #part2{
     display:flex;
     flex-direction:column;
-    width:100vw;
+    width:90vw;
 }
-p{word-wrap:break-word;width:90vw;}
+p{word-wrap:break-word;width:85vw;}
 #part2dot2{
- width:95vw ;
+ width:85vw ;
  padding:2em;
  height:fit-content;
  background: url(images/part2.2.png) no-repeat ; 
  display:flex; 
 }
 #part2dot1{
-    width:90vw;
+    width:85vw;
     position:relative;
     left:15px;
     word-wrap: break-word;
@@ -308,7 +313,7 @@ p{word-wrap:break-word;width:90vw;}
     z-index: 10;
 }
 #part2dot1 h1{
-    width:90vw;
+    width:85vw;
     font-size: 24px;
     word-wrap: break-word;
 }
@@ -326,13 +331,13 @@ p{word-wrap:break-word;width:90vw;}
     margin:10% 0 10% 0;
     display: flex;
     flex-direction:column;
-    width:100%;
+    width:90vw;
     height:fit-content;
     justify-items: center;
     text-align:center;
 }
 #part3dot1{
-    width:90vw;
+    width:85vw;
     height:fit-content;
     border: 1px solid gray;
     box-shadow: 2px 3px 4px rgba(128, 128, 128, 0.614);
@@ -346,6 +351,7 @@ p{word-wrap:break-word;width:90vw;}
     font-size:18px;
     text-align: center;
     word-wrap: break-word;
+    width:85vw;
 }
 #part4 img{
     width:70vw;
@@ -363,11 +369,12 @@ p{word-wrap:break-word;width:90vw;}
 #part5{
    display:flex;
    flex-direction:column;
+   width:90vw;
 }
 #part5dot1,#part5dot3{
     text-align:left;
     vertical-align:middle;
-    width:90vw;
+    width:85vw;
     float:left;
     display:flex;
     flex-direction:row;
@@ -375,7 +382,7 @@ p{word-wrap:break-word;width:90vw;}
 #part5dot2,#part5dot4{
     text-align:left;
     vertical-align:middle;
-    width:90vw;
+    width:85vw;
     float:right;
     align-self:right;
     display:flex;
@@ -386,7 +393,7 @@ p{word-wrap:break-word;width:90vw;}
     margin:2%;
 }
 #content-div{
-    width:90vw;
+    width:85vw;
     height:fit-content;
     margin:5%;
 }
@@ -395,4 +402,59 @@ p{word-wrap:break-word;width:90vw;}
     height:fit-content;
     margin:2%;
 }
+#part6{
+    width:90vw;
+    height:fit-content;
+    box-shadow:2px 3px 4px 4px rgba(128, 128, 128, 0.301);
+    margin:2% 0% 2% 0%;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+}
+#part6dot2{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    bottom:0px;
+    right:0px;
+    width:85vw;
+    justify-content: start;
+    overflow-x: scroll;
+    flex-wrap: wrap;
+}
+#testimonial{
+    width:80vw;
+    height:fit-content;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    vertical-align:middle;
+    z-index:30;
+    border:solid 1px grey;
+    box-shadow:2px 3px 3px 3px rgba(128, 128, 128, 0.301);
+    padding:1% 1% 8% 1%;
+    border-radius:30px;
+    margin:10px;
+    background-color:white;
+    overflow: scroll;
+ }
+ #testtop,#testbottom{
+    width:80vw;
+ }
+ #forwardarrow{
+    display:flex;
+    position: sticky;
+    right:0;
+    width:40px;
+    height:40px;
+ }
+ #bottombar{
+   
+    text-align:center;
+    background-color:black;
+    color:white;
+    width:90vw;
+    height:10vw;
+    vertical-align:baseline;   
+ }
 }
